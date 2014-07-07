@@ -1,12 +1,10 @@
 
 <div class="jumbotron center radius">
 	<h1>Welcome to my App!</h1>
-	<% if user_signed_in? %>
-		<%= link_to "Take a look at the pins!", pins_path, class: 'btn btn-primary btn-danger btn-lg' %>
-	<% else %>
+	
 	<p>
 		<%= link_to "Log in", new_user_session_path, class: 'btn btn-default btn-lg' %>
 		<%= link_to "Sign up", new_user_registration_path, class: 'btn btn-primary btn-danger btn-lg' %>
 	</p>
-	<% end %>
+
 </div>
