@@ -1,3 +1,10 @@
+<p>
+<%= link_to pins_path do %>
+	<span class="glyphicon glyphicon-chevron-left"></span>
+	Back
+<% end %>
+</p>
+
 <div class="panel panel-default">
 	<div class="panel-heading">
 		<h1>New pin</h1>
@@ -5,7 +12,4 @@
     <div class="panel-body">
 		<%= render 'form' %>
     </div>
-    <div class="panel-footer">
-		<%= link_to 'Back', pins_path %>
-	</div>
 </div>
