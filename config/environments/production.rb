@@ -91,6 +91,9 @@ Rails.application.configure do
     }
   }
   
+  #Sets Glyphicons in production environment
+  config.assets.compile = true
+  
   # Do not dump schema after migrations. 
   config.active_record.dump_schema_after_migration = false
 end
