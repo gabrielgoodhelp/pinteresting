@@ -37,6 +37,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    acts_as_commentable (4.0.1)
     arel (5.0.1.20140414130214)
     aws-sdk (1.46.0)
       json (~> 1.4)
@@ -159,6 +160,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_commentable
   aws-sdk (~> 1.46.0)
   bootstrap-sass
   coffee-rails (~> 4.0.0)

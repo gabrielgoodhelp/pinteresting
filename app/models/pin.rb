@@ -5,6 +5,8 @@ class Pin < ActiveRecord::Base
 	:styles => { :medium => "300x300>", :thumb => "100x100>" }, 
 	:default_url => "/images/:style/missing.png"
 
+	has_many :comments
+
 	validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
 	validates :image, presence: true
 	validates :description, presence: true
