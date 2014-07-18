@@ -1,22 +1,31 @@
 <p>
 <%= link_to pins_path do %>
-	<span class="glyphicon glyphicon-chevron-left"></span>
+	<span class="glyphicon glyphicon-chevron-left color"></span>
 	Back
 <% end %>
 </p>
-
-<div class="panel panel-default">
-	<div class="panel-heading">
-		<h1>Edit your pin</h1>
-	<div/>
-    <div class="panel-body">
-<%= render 'form' %>
-	</div>
-    <div class="panel-footer">
-<%= link_to @pin do %>
-	<span class="glyphicon glyphicon-eye-open"></span>
-	Show
-<% end %>
+<div class="row">
+	<div class="col-md-offset-2 col-md-8">
+		<div class="panel panel-default">
+			
+			<div class="panel-heading center">
+						<%= image_tag @pin.image.url(:medium) %>
+					</div>
+		    <div class="panel-body">
+		    	<p>Averate rating</p>
+					<div id="star">
+						<%= rating_for @pin %>
+					</div>
+					<p></p>
+		<%= render 'form' %>
+			</div>
+		    <div class="panel-footer">
+		<%= link_to @pin do %>
+			<span class="glyphicon glyphicon-eye-open"></span>
+			Show
+		</div>
+		<% end %>
+			
+		</div>
 	</div>
 </div>
-

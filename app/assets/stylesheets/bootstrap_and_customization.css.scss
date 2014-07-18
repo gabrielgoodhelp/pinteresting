@@ -1,19 +1,20 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,600);
-@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
 
 
 $body-bg:					white; 
 $font-family-sans-serif:	'Lato','Helvetica Neue', Helvetica, Arial, Sans Serif;
 $navbar-default-bg:			#ecf0f1;
-$navbar-default-link-color:	#c0392b;
-$brand-danger: 				#c0392b;
+$navbar-default-link-color:	#16a085;
+$brand-danger: 				#1abc9c;
 $jumbotron-bg:				#ecf0f1;
 $jumbotron-padding:			30px;
 
 @import 'bootstrap';
 
+
 .navbar-brand {
-	font-family: 'Pacifico', 'Lato', 'Helvetica Neue', Helvetica, Arial, Sans Serif;
+	font-family: 'Indie Flower', 'Lato', 'Helvetica Neue', Helvetica, Arial, Sans Serif;
 	font-weight: bold;
 	font-size: 28px;
 }
@@ -32,4 +33,12 @@ $jumbotron-padding:			30px;
 
 .transparent {
 	opacity: 0.8;
+}
+
+body { 
+	padding-top: 70px; 
+}
+
+#star {
+	size:12px;
 }

@@ -35,6 +35,11 @@ gem 'will_paginate-bootstrap'
 
 gem 'acts_as_commentable'
 
+gem 'simple_form', '~> 3.0.2'
+
+gem 'jquery-star-rating-rails', '~> 4.0.4'
+
+gem 'letsrate', '~> 1.0.9'
 
 group :development, :test do
 	gem 'sqlite3'

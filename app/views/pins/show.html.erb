@@ -15,13 +15,26 @@
 			<div class="panel-body">
 
 				<p><%= @pin.description %></p>
-				<p><strong><%= @pin.user.name if @pin.user %></strong></p>
+					<p>Averate rating</p>
+					<div id="star">
+						<%= rating_for @pin %>
+					</div>
+						
+					
+			</div>
+			<div class="panel-footer">
 				<p><% if @pin.user == current_user %></p>
 				<%= link_to edit_pin_path(@pin) do %>
 	              <span class="glyphicon glyphicon-edit"></span>
 	              Edit
 	            <% end %>
-		<% end %>
+	             <%= link_to @pin, method: :delete, data: { confirm: 'Are you sure?' } do %>
+              <span class="glyphicon glyphicon-trash"></span>
+              Delete
+            <% end %>
+                
+	           
+		        <% end %>
 			</div>
 		</div>
 	</div>

@@ -6,5 +6,9 @@ class User < ActiveRecord::Base
   
   has_many :pins
 
-  validates :name, presence: true
+  has_many :ratings
+
+  has_many :comments, dependent: :destroy
+
+  letsrate_rater
 end
