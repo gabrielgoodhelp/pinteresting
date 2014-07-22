@@ -12,6 +12,11 @@ $jumbotron-padding:			30px;
 
 @import 'bootstrap';
 
+<--/ Adjust_body /-->
+
+body { 
+	padding-top: 70px; 
+}
 
 .navbar-brand {
 	font-family: 'Indie Flower', 'Lato', 'Helvetica Neue', Helvetica, Arial, Sans Serif;
@@ -33,10 +38,6 @@ $jumbotron-padding:			30px;
 
 .transparent {
 	opacity: 0.8;
-}
-
-body { 
-	padding-top: 70px; 
 }
 
 #star {
